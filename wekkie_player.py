@@ -470,7 +470,7 @@ class Jukebox(SpotifySessionManager):
 
 if __name__ == '__main__':
 	config = ConfigParser.RawConfigParser()
-	config.read('wekkie.conf')
+	config.read('wekkie.cfg')
 	
 	user = config.get("spotify", "user")
 	password = config.get("spotify", "password")
