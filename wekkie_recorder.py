@@ -6,7 +6,7 @@ import os, base64
 from hotqueue import HotQueue
 from optparse import OptionParser
 
-times = [
+test_times = [
 	"12 56",
 	"12:56",
 	"twaalf dertig",

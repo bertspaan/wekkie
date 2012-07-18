@@ -40,7 +40,7 @@ class JukeboxUI(cmd.Cmd, threading.Thread):
 			if uri:
 				link = Link.from_string(uri)
 				if link.type() == Link.LINK_TRACK:
-					self.jukebox.load_track(l.as_track())
+					self.jukebox.load_track(link.as_track())
 					self.jukebox.play()
 				elif link.type() == Link.LINK_ARTIST:
 					browser = ArtistBrowser(link.as_artist())
