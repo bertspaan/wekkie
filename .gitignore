@@ -1,0 +1,13 @@
+# Compiled source #
+###################
+*.pyc
+
+# API keys/login  #
+###################
+spotify_appkey.key
+wekkie.conf
+
+# Temporary files #
+###################
+tmp
+dump.rdb
