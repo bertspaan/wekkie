@@ -36,8 +36,10 @@ class JukeboxUI(cmd.Cmd, threading.Thread):
 		container_loaded.wait()
 		container_loaded.clear()
 		
+		print "Starting consume loop..."
 		for uri in self.queue_play.consume():
 			if uri:
+				print "Try to play", uri
 				link = Link.from_string(uri)
 				if link.type() == Link.LINK_TRACK:
 					self.jukebox.load_track(link.as_track())
@@ -47,7 +49,7 @@ class JukeboxUI(cmd.Cmd, threading.Thread):
 					while not browser.is_loaded():
 						time.sleep(0.1)
 					toptracks = browser.tophit_tracks()
-					
+					print toptracks
 					#random.shuffle(toptracks)					
 					track = choice(toptracks)
 					self.jukebox.load_track(track)
@@ -475,5 +477,7 @@ if __name__ == '__main__':
 	user = config.get("spotify", "user")
 	password = config.get("spotify", "password")
 		
+	print "Using Spotify user \"%s\"" % user
+	
 	session_m = Jukebox(user, password, True)
 	session_m.connect()

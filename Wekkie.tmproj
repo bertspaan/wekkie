@@ -3,14 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>wekkie_recorder.py</string>
+	<string>wekkie_player.py</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
 			<string>wekkie_player.py</string>
 			<key>lastUsed</key>
-			<date>2012-07-18T15:39:13Z</date>
+			<date>2012-07-18T16:03:06Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -20,35 +22,39 @@
 		</dict>
 		<dict>
 			<key>filename</key>
+			<string>hotqueuetest.py</string>
+			<key>lastUsed</key>
+			<date>2012-07-18T16:03:06Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
 			<string>wekkie_recorder.py</string>
 			<key>lastUsed</key>
-			<date>2012-07-18T15:44:56Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2012-07-18T16:01:09Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>parseartist.py</string>
 			<key>lastUsed</key>
-			<date>2012-07-09T12:14:57Z</date>
+			<date>2012-07-18T16:01:35Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>googlevoice.py</string>
 			<key>lastUsed</key>
-			<date>2012-07-09T12:51:05Z</date>
+			<date>2012-07-18T16:01:52Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>parsetime.py</string>
 			<key>lastUsed</key>
-			<date>2012-07-18T15:19:22Z</date>
+			<date>2012-07-18T16:01:34Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>soundrecorder.py</string>
 			<key>lastUsed</key>
-			<date>2012-07-08T20:55:13Z</date>
+			<date>2012-07-18T16:02:17Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -114,6 +120,20 @@
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>7</integer>
+		</dict>
+		<key>hotqueuetest.py</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>4</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
 		</dict>
 		<key>parseartist.py</key>
 		<dict>
@@ -190,33 +210,50 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>24</integer>
+				<integer>32</integer>
 				<key>line</key>
-				<integer>472</integer>
+				<integer>40</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>436</integer>
+			<integer>439</integer>
 		</dict>
 		<key>wekkie_recorder.py</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>10</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>63</integer>
+				<integer>67</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>33</integer>
+			<integer>3</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>36</integer>
+				<key>line</key>
+				<integer>68</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>67</integer>
+			</dict>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
 		<string>wekkie_recorder.py</string>
+		<string>hotqueuetest.py</string>
 		<string>wekkie_alarm.py</string>
 		<string>wekkie_player.py</string>
 		<string>parsetime.py</string>
@@ -230,6 +267,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{218, 232}, {1070, 774}}</string>
+	<string>{{218, 232}, {1161, 774}}</string>
 </dict>
 </plist>
