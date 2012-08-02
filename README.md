@@ -1,15 +1,22 @@
 
 - sudo locale-gen en_US en_US.UTF-8 en_GB en_GB.UTF-8
-- dpkg-reconfigure locales
+- sudo dpkg-reconfigure locales
+- sudo apt-get update
+- sudo apt-get upgrade
 - sudo nano /etc/network/interfaces
 
+- 		auto lo
+
+		iface lo inet loopback
+		iface eth0 inet dhcp
+		
 		auto wlan0
 		iface wlan0 inet dhcp
 			wpa-conf /etc/wpa_supplicant.conf	
 
 - sudo nano /etc/wpa_supplicant.conf
 
-		network={
+-		network={
 			scan_ssid=1
 			ssid="Sitecom54D7FA"
 			proto=WPA
@@ -19,15 +26,15 @@
 			psk="55PJUFWYZG84"
 		}
 
-- sudo apt-get install git
-- sudo apt-get install subversion
-- sudo apt-get install redis-server
-- sudo apt-get install netatalk
-- sudo apt-get install avahi-daemon
+- sudo apt-get install git subversion redis-server netatalk avahi-daemon
+- sudo apt-get install tightvncserver
+
+vncserver :1 -geometry 1024x728 -depth 24
+
 - sudo update-rc.d avahi-daemon defaults
 - sudo nano /etc/avahi/services/afpd.service
 
-		<?xml version="1.0" standalone='no'?><!--*-nxml-*-->
+-		<?xml version="1.0" standalone='no'?><!--*-nxml-*-->
 		<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
 		<service-group>
 		   <name replace-wildcards="yes">%h</name>
@@ -40,7 +47,7 @@
 - sudo /etc/init.d/avahi-daemon restart
 - sudo nano /etc/avahi/services/rfb.service
 
-    	<?xml version="1.0" standalone='no'?>
+-   	<?xml version="1.0" standalone='no'?>
 		<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
 		<service-group>
 		  <name replace-wildcards="yes">%h</name>
@@ -50,26 +57,21 @@
 		  </service>
 		</service-group>
 
-- sudo /etc/init.d/avahi.deamon restart
+- sudo /etc/init.d/avahi-daemon restart
 - sudo apt-get install ca-certificates
 - sudo wget http://goo.gl/1BOfJ -O /usr/bin/rpi-update && chmod +x /usr/bin/rpi-update
 - //rpi-update
 
-- sudo apt-get install python-dev
-- sudo apt-get install python-pip
-- sudo apt-get install libasound-dev
-- sudo apt-get install portaudio19-dev
-- sudo apt-get install cython
-- libssl-dev zlib1g-dev libvorbis-dev libtool libncursesw5-dev libao-dev
-- apt-get install libao-dev
-- sudo apt-get install sox
+- sudo apt-get install python-dev python-pip cython
+- sudo apt-get install libasound-dev portaudio19-dev libssl-dev zlib1g-dev libvorbis-dev libtool libncursesw5-dev libao-dev sox
 
-mkdir dev
-svn co https://despotify.svn.sourceforge.net/svnroot/despotify despotify
+- mkdir dev && cd dev
+- svn co https://despotify.svn.sourceforge.net/svnroot/despotify despotify
+- cd src
+- sudo make install
 
 
 
-despotify
 
 https://developer.spotify.com/technologies/libspotify/#download
 make install
@@ -82,6 +84,8 @@ make install
 
 
 sudo pip install -U pyspotify==dev
+
+
 
 Start wekkie_alarm and wekkie_player.
 
